@@ -1,0 +1,285 @@
+/* -----------------General rules for the whole page----------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  list-style-type: none;
+}
+
+/* on edge browser, while I web capture the design as an image, the sections without 
+background-color appears in black, so I give the body a white background
+for screenshot purposes only :) */
+
+body {
+  background-color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ------------------Home (banner)-------------------------------- */
+
+/* to make the background image darker, linear-gradient(black, black) but with rgba
+https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h */
+
+.banner {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/drew-coffman-1872.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav .logo img {
+  width: 43%;
+}
+.nav .logo {
+  float: left;
+  padding-left: 55px;
+  padding-top: 20px;
+}
+
+.nav-list ul {
+  float: right;
+  padding-right: 50px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.nav-list li {
+  float: left;
+  padding-top: 25px;
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.welcome {
+  text-align: center;
+  color: white;
+}
+
+.welcome p {
+  font-size: 25px;
+  margin-bottom: 50px;
+  opacity: 0.7;
+}
+
+.welcome h1 {
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.btn1 {
+  background-color: #8e7754;
+  border: none;
+}
+
+.btn2 {
+  background-color: transparent;
+  border-color: white;
+}
+
+.scroll {
+  text-align: center;
+}
+
+.scroll img {
+  width: 10%;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------ (shared rules between s1, s2, s3, s4, footer)-------------------------------- */
+
+.s1,
+.s2,
+.s3,
+.s4,
+.footer {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.s1 h3,
+.s2 h3,
+.s3 h3,
+.s4 h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #303030;
+}
+
+.s2-text,
+.s4-text {
+  padding-right: 30px;
+}
+
+.s1-content,
+.s2-content,
+.s4-content {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.s1-img img,
+.s2-img img,
+.s4-map iframe {
+  width: 100%;
+}
+
+.s1-text p,
+.s2-text p,
+.s3-text p,
+.s4-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #686868;
+  line-height: 30px;
+}
+
+.s1-text ul li,
+.s4-text ul li {
+  text-align: left;
+  font-size: 20px;
+  padding-top: 20px;
+  color: #686868;
+}
+
+.s1-text ul img,
+.s4-text ul img {
+  width: 35px;
+  vertical-align: middle;
+  margin-right: 15px;
+  opacity: 0.7;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------About (rules only for s1)-------------------------------- */
+.s1-text {
+  padding-left: 30px;
+}
+/* ------------------------------------------------------ */
+/* ------------------our offer (rules only for s2 )-------------------------------- */
+
+.s2 {
+  background-color: rgb(248, 248, 248);
+}
+
+/* ------------------------------------------------------ */
+/* ------------------Gallery (rules only for s3)-------------------------------- */
+
+.s3 p {
+  font-size: 20px;
+  color: #686868;
+}
+
+.s3-img {
+  width: 32%;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.s3-img img {
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.s3-img h4,
+.s3-img p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  padding: 0 30px;
+  line-height: 30px;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------Contact (rules only for s4)-------------------------------- */
+.s4 {
+  background-color: rgb(248, 248, 248);
+}
+
+/* ------------------------------------------------------ */
+/* ------------------Blog (rules only for s5)-------------------------------- */
+.s5 {
+  background-color: #403d38;
+  padding: 50px 60px;
+}
+
+.s5 hr {
+  border: 0.1px solid #303030;
+}
+
+.s5-content {
+  width: 25%;
+  float: left;
+  padding-right: 30px;
+}
+
+.s5-content h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.s5-content p {
+  color: #969696;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.s5-text ul li {
+  font-size: 20px;
+  padding: 20px 0;
+  color: #969696;
+}
+
+.s5-text ul img {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------rules only for footer-------------------------------- */
+.footer {
+  background-color: #353330;
+}
+
+.footer-logo img {
+  width: 20%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer p {
+  color: #969696;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.social img {
+  width: 35px;
+}
